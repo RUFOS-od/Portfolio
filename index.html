@@ -27,12 +27,15 @@
         <div class="container fluid-nav">
             <div class="logo">ODETO<span class="dot">.</span></div>
             <nav class="desktop-nav">
-                <a href="#expertise" class="nav-link">Ingen-sociale</a>
-                <a href="#data-products" class="nav-link">Data Products</a>
-                <a href="#market-intel" class="nav-link">Market Intelligence</a>
-                <a href="#contact" class="nav-link">Contact</a>
+                <a href="#expertise" class="nav-link" data-i18n="nav.expertise">Ingen-sociale</a>
+                <a href="#data-products" class="nav-link" data-i18n="nav.products">Data Products</a>
+                <a href="#market-intel" class="nav-link" data-i18n="nav.market">Market Intelligence</a>
+                <a href="#contact" class="nav-link" data-i18n="nav.contact">Contact</a>
             </nav>
             <div class="header-actions">
+                <button id="lang-toggle" aria-label="Toggle Language" class="lang-toggle">
+                    <span class="lang-text">FR</span>
+                </button>
                 <button id="theme-toggle" aria-label="Toggle Theme" class="theme-toggle">
                     <i class="fas fa-sun"></i>
                 </button>
@@ -47,10 +50,10 @@
     <!-- Mobile Menu Overlay -->
     <div class="mobile-menu-overlay">
         <nav class="mobile-nav">
-            <a href="#expertise" class="mobile-link">Ingen-sociale</a>
-            <a href="#data-products" class="mobile-link">Data Products</a>
-            <a href="#market-intel" class="mobile-link">Market Intelligence</a>
-            <a href="#contact" class="mobile-link">Contact</a>
+            <a href="#expertise" class="mobile-link" data-i18n="nav.expertise">Ingen-sociale</a>
+            <a href="#data-products" class="mobile-link" data-i18n="nav.products">Data Products</a>
+            <a href="#market-intel" class="mobile-link" data-i18n="nav.market">Market Intelligence</a>
+            <a href="#contact" class="mobile-link" data-i18n="nav.contact">Contact</a>
         </nav>
     </div>
 
@@ -60,10 +63,10 @@
             <div class="container hero-container">
                 <div class="hero-text-wrapper">
                     <h1 class="hero-title reveal-text">
-                        <span class="line">Données Visionnaires.</span>
-                        <span class="line">Impact Tangible.</span>
+                        <span class="line" data-i18n="hero.title1">Données Visionnaires.</span>
+                        <span class="line" data-i18n="hero.title2">Impact Tangible.</span>
                     </h1>
-                    <p class="hero-subtitle reveal-text delay-1">
+                    <p class="hero-subtitle reveal-text delay-1" data-i18n="hero.subtitle">
                         Je transforme l'incertitude algorithmique en <span class="highlight">Dominance
                             Commerciale</span>.
                         Expertise hybride entre <span class="highlight">Data Science</span> et <span
@@ -78,7 +81,7 @@
                 </div>
 
                 <div class="scroll-indicator">
-                    <span>Explorer</span>
+                    <span data-i18n="hero.scroll">Explorer</span>
                     <div class="line"></div>
                 </div>
             </div>
@@ -97,7 +100,7 @@
         <!-- Brief Intro / Philosophy -->
         <section class="philosophy-section">
             <div class="container text-center">
-                <p class="big-statement reveal-up">
+                <p class="big-statement reveal-up" data-i18n="philosophy.statement">
                     "La donnée n'est que du bruit sans stratégie. J'architecte des systèmes qui convertissent <span
                         class="gradient-text">des téraoctets en revenus</span> et des <span
                         class="gradient-text">capteurs en solutions</span>."
@@ -118,9 +121,10 @@
         <section id="data-products" class="section dark-section">
             <div class="container">
                 <div class="section-header">
-                    <span class="section-label">01. Innovation</span>
-                    <h2 class="section-title">Architecte d'Avantage Concurrentiel</h2>
-                    <p class="section-lead">Des outils propriétaires conçus pour surperformer le marché.</p>
+                    <span class="section-label" data-i18n="section1.label">01. Innovation</span>
+                    <h2 class="section-title" data-i18n="section1.title">Architecte d'Avantage Concurrentiel</h2>
+                    <p class="section-lead" data-i18n="section1.lead">Des outils propriétaires conçus pour surperformer
+                        le marché.</p>
                 </div>
 
                 <div class="sticky-stack-wrapper">
@@ -128,8 +132,9 @@
                     <div class="sticky-card card-1 reveal-up" data-project-id="sim-web">
                         <div class="card-content">
                             <span class="card-number">01</span>
-                            <h3>Simulateur Web & Analyse Conjointe</h3>
-                            <p><strong>Le Défi :</strong> Prédire l'adoption consommateur dans des marchés
+                            <h3 data-i18n="project.simweb.title">Simulateur Web & Analyse Conjointe</h3>
+                            <p data-i18n="project.simweb.desc"><strong>Le Défi :</strong> Prédire l'adoption
+                                consommateur dans des marchés
                                 ultra-volatiles.<br>
                                 <strong>La Solution :</strong> Un moteur de simulation stochastique basé sur la théorie
                                 des jeux.
@@ -149,8 +154,9 @@
                     <div class="sticky-card card-2 reveal-up" data-project-id="intel-strat">
                         <div class="card-content">
                             <span class="card-number">02</span>
-                            <h3>Intelligence Stratégique (Veille)</h3>
-                            <p><strong>Le Défi :</strong> Les signaux faibles du marché sont noyés dans le bruit
+                            <h3 data-i18n="project.intelstrat.title">Intelligence Stratégique (Veille)</h3>
+                            <p data-i18n="project.intelstrat.desc"><strong>Le Défi :</strong> Les signaux faibles du
+                                marché sont noyés dans le bruit
                                 numérique.<br>
                                 <strong>La Solution :</strong> Un moteur NLP Temps-Réel qui calcule la "Share of Voice"
                                 et analyse la pression médiatique pour détecter les opportunités inexploitées avant la
@@ -169,8 +175,9 @@
                     <div class="sticky-card card-3 reveal-up" data-project-id="lead-qual">
                         <div class="card-content">
                             <span class="card-number">03</span>
-                            <h3>Qualification Automatisée de Leads</h3>
-                            <p><strong>Le Défi :</strong> Les équipes commerciales perdent 60% de leur temps sur des
+                            <h3 data-i18n="project.leadqual.title">Qualification Automatisée de Leads</h3>
+                            <p data-i18n="project.leadqual.desc"><strong>Le Défi :</strong> Les équipes commerciales
+                                perdent 60% de leur temps sur des
                                 prospects froids.<br>
                                 <strong>La Solution :</strong> Un système de scoring prédictif (Machine Learning)
                                 intégrant les données comportementales pour réduire le coût d'acquisition de 40%.
@@ -191,17 +198,19 @@
         <section id="market-intel" class="section light-section">
             <div class="container">
                 <div class="section-header text-dark">
-                    <span class="section-label">02. Stratégie & Outils</span>
-                    <h2 class="section-title">Décoder le Comportement Humain</h2>
-                    <p class="section-lead text-dark-muted">Maîtrise complète de la chaîne de valeur Data, de la
+                    <span class="section-label" data-i18n="section2.label">02. Stratégie & Outils</span>
+                    <h2 class="section-title" data-i18n="section2.title">Décoder le Comportement Humain</h2>
+                    <p class="section-lead text-dark-muted" data-i18n="section2.lead">Maîtrise complète de la chaîne de
+                        valeur Data, de la
                         collecte à l'analyse avancée.</p>
                 </div>
 
                 <div class="grid-intel">
                     <div class="intel-card reveal-up">
                         <div class="intel-icon"><i class="fas fa-database"></i></div>
-                        <h4>Collecte & Terrain</h4>
-                        <p class="intel-desc">Déploiement d'enquêtes complexes et gestion de données terrain.</p>
+                        <h4 data-i18n="intel.collect.title">Collecte & Terrain</h4>
+                        <p class="intel-desc" data-i18n="intel.collect.desc">Déploiement d'enquêtes complexes et gestion
+                            de données terrain.</p>
                         <div class="tool-badges">
                             <span class="badge">SurveyTogo</span>
                             <span class="badge">KoboToolBox</span>
@@ -209,8 +218,9 @@
                     </div>
                     <div class="intel-card reveal-up">
                         <div class="intel-icon"><i class="fas fa-chart-pie"></i></div>
-                        <h4>Analyse Quantitative</h4>
-                        <p class="intel-desc">Traitements statistiques avancés, segmentation et modélisation.</p>
+                        <h4 data-i18n="intel.quant.title">Analyse Quantitative</h4>
+                        <p class="intel-desc" data-i18n="intel.quant.desc">Traitements statistiques avancés,
+                            segmentation et modélisation.</p>
                         <div class="tool-badges">
                             <span class="badge">IBM SPSS</span>
                             <span class="badge">R / Python</span>
@@ -218,8 +228,9 @@
                     </div>
                     <div class="intel-card reveal-up">
                         <div class="intel-icon"><i class="fas fa-comments"></i></div>
-                        <h4>Analyse Qualitative</h4>
-                        <p class="intel-desc">Codage sémantique, analyse de discours et focus groups.</p>
+                        <h4 data-i18n="intel.qual.title">Analyse Qualitative</h4>
+                        <p class="intel-desc" data-i18n="intel.qual.desc">Codage sémantique, analyse de discours et
+                            focus groups.</p>
                         <div class="tool-badges">
                             <span class="badge">Nvivo</span>
                             <span class="badge">Atlas.ti</span>
@@ -227,8 +238,9 @@
                     </div>
                     <div class="intel-card reveal-up">
                         <div class="intel-icon"><i class="fas fa-brain"></i></div>
-                        <h4>Psycho-Sociologie</h4>
-                        <p class="intel-desc">Études U&A, Tracking de Marque et NPS Stratégique.</p>
+                        <h4 data-i18n="intel.psycho.title">Psycho-Sociologie</h4>
+                        <p class="intel-desc" data-i18n="intel.psycho.desc">Études U&A, Tracking de Marque et NPS
+                            Stratégique.</p>
                     </div>
                 </div>
             </div>
@@ -239,19 +251,23 @@
             <div class="container">
                 <div class="iot-wrapper">
                     <div class="iot-content reveal-up">
-                        <span class="section-label">03. Impact</span>
-                        <h2 class="section-title">Le Pont Phygital</h2>
+                        <span class="section-label" data-i18n="section3.label">03. Impact</span>
+                        <h2 class="section-title" data-i18n="section3.title">Le Pont Phygital</h2>
 
                         <div class="iot-block">
-                            <h4><i class="fas fa-network-wired"></i> Architecture Edge Computing</h4>
-                            <p>Conception du système nerveux des infrastructures modernes chez <strong>Orange
+                            <h4 data-i18n="iot.block1.title"><i class="fas fa-network-wired"></i> Architecture Edge
+                                Computing</h4>
+                            <p data-i18n="iot.block1.desc">Conception du système nerveux des infrastructures modernes
+                                chez <strong>Orange
                                     CI</strong>. Traitement de la donnée à la source (Edge) pour une latence
                                 milliseconde critique.</p>
                         </div>
 
                         <div class="iot-block">
-                            <h4><i class="fas fa-seedling"></i> Ambassadeur Orange Corners</h4>
-                            <p>Je ne construis pas seulement de la tech ; je construis des écosystèmes. Mentorat actif
+                            <h4 data-i18n="iot.block2.title"><i class="fas fa-seedling"></i> Ambassadeur Orange Corners
+                            </h4>
+                            <p data-i18n="iot.block2.desc">Je ne construis pas seulement de la tech ; je construis des
+                                écosystèmes. Mentorat actif
                                 de la prochaine génération de géants de la Tech africaine. Formation aux enjeux DPO/RGPD
                                 pour une croissance éthique.</p>
                         </div>
@@ -275,15 +291,17 @@
                     <div class="impact-grid">
                         <div class="impact-card" data-project-id="impact-1">
                             <div class="number-badge">01</div>
-                            <h4>Innovation Numérique Inclusive"</h4>
-                            <span class="impact-label">Le Concept</span>
-                            <p>Une incubation technologique au cœur des communautés vulnérables. <br>
+                            <h4 data-i18n="impact.card1.title">Innovation Numérique Inclusive</h4>
+                            <span class="impact-label" data-i18n="impact.label.concept">Le Concept</span>
+                            <p data-i18n="impact.card1.concept">Une incubation technologique au cœur des communautés
+                                vulnérables. <br>
                                 L’apprentissage par la pratique pour résoudre des défis locaux. <br>
                                 Un accompagnement physique vers l'innovation et le numérique. <br>
                                 Un parcours d'émancipation sociale par la maîtrise technique. <br>
                             </p>
-                            <span class="impact-label">Valeur Ajoutée</span>
-                            <p>Création de startups concrètes par des jeunes de milieux défavorisés. <br>
+                            <span class="impact-label" data-i18n="impact.label.value">Valeur Ajoutée</span>
+                            <p data-i18n="impact.card1.value">Création de startups concrètes par des jeunes de milieux
+                                défavorisés. <br>
                                 Modernisation digitale et autonomisation économique des femmes. <br>
                                 Pilotage de l'impact social par des indicateurs de performance réels. <br>
                                 Passage de la fracture numérique à l'opportunité entrepreneuriale. <br>
@@ -292,15 +310,17 @@
 
                         <div class="impact-card" data-project-id="impact-2">
                             <div class="number-badge">02</div>
-                            <h4>Inclusion Financière (Gender Analytics)</h4>
-                            <span class="impact-label">Le Concept</span>
-                            <p>Démocratisation du crédit via des indicateurs comportementaux. <br>
+                            <h4 data-i18n="impact.card2.title">Inclusion Financière (Gender Analytics)</h4>
+                            <span class="impact-label" data-i18n="impact.label.concept">Le Concept</span>
+                            <p data-i18n="impact.card2.concept">Démocratisation du crédit via des indicateurs
+                                comportementaux. <br>
                                 Évaluation des risques basée sur les données réelles et le comportement transactionnel.
                                 <br>
                                 Outils d'aide à la décision pour les institutions financières. <br>
                             </p>
-                            <span class="impact-label">Valeur Ajoutée</span>
-                            <p>Réduction du risque de défaut pour les institutions financières. <br>
+                            <span class="impact-label" data-i18n="impact.label.value">Valeur Ajoutée</span>
+                            <p data-i18n="impact.card2.value">Réduction du risque de défaut pour les institutions
+                                financières. <br>
                                 Accès facilité au financement pour les femmes entrepreneurs. <br>
                                 Données fiables pour une meilleure gestion des portefeuilles de crédit. <br>
                                 Innovation dans les services financiers digitaux. <br>
@@ -309,16 +329,18 @@
 
                         <div class="impact-card" data-project-id="impact-3">
                             <div class="number-badge">03</div>
-                            <h4>IoT Vigilance Maternelle</h4>
-                            <span class="impact-label">Le Concept</span>
-                            <p>Télésurveillance biométrique en temps réel pour les zones isolées.<br>
+                            <h4 data-i18n="impact.card3.title">IoT Vigilance Maternelle</h4>
+                            <span class="impact-label" data-i18n="impact.label.concept">Le Concept</span>
+                            <p data-i18n="impact.card3.concept">Télésurveillance biométrique en temps réel pour les
+                                zones isolées.<br>
                                 Dispositif médical à bas coût pour un suivi proactif et continu.
                                 <br>
                                 Capteurs connectés low-cost pour le suivi des constantes des femmes enceintes en zones
                                 reculées.
                             </p>
-                            <span class="impact-label">Valeur Ajoutée</span>
-                            <p>Détection IA des signaux faibles pour réduire la mortalité maternelle ("Tech for Good").
+                            <span class="impact-label" data-i18n="impact.label.value">Valeur Ajoutée</span>
+                            <p data-i18n="impact.card3.value">Détection IA des signaux faibles pour réduire la mortalité
+                                maternelle ("Tech for Good").
                                 <br>
                                 Solution opérationnelle en zones blanches (sans couverture mobile).
                                 <br>
@@ -343,15 +365,17 @@
 
                         <div class="impact-card" data-project-id="impact-5">
                             <div class="number-badge">04</div>
-                            <h4>Budgétisation Sensible au Genre</h4>
-                            <span class="impact-label">Le Concept</span>
-                            <p>Audit analytique de la dépense publique sous le prisme du genre.<br>
+                            <h4 data-i18n="impact.card5.title">Budgétisation Sensible au Genre</h4>
+                            <span class="impact-label" data-i18n="impact.label.concept">Le Concept</span>
+                            <p data-i18n="impact.card5.concept">Audit analytique de la dépense publique sous le prisme
+                                du genre.<br>
                                 Transformation des données budgétaires en leviers d'équité sociale.<br>
                                 Analyse granulaire de l'impact des investissements municipaux.<br>
                                 Pilotage financier axé sur la justice distributive et l'inclusion.<br>
                             </p>
-                            <span class="impact-label">Valeur Ajoutée</span>
-                            <p>Automatisation de l'audit budgétaire pour une transparence totale.<br>
+                            <span class="impact-label" data-i18n="impact.label.value">Valeur Ajoutée</span>
+                            <p data-i18n="impact.card5.value">Automatisation de l'audit budgétaire pour une transparence
+                                totale.<br>
                                 Aide à la décision stratégique pour les collectivités territoriales.<br>
                                 Passage d'un budget administratif à un budget de performance sociale.<br>
                                 Impact direct sur l'équité sociale et la réduction des inégalités.
@@ -366,9 +390,10 @@
         <section id="gallery" class="section">
             <div class="container">
                 <div class="section-header text-dark">
-                    <span class="section-label">04. Réalisations</span>
-                    <h2 class="section-title">Galerie des Projets</h2>
-                    <p class="section-lead text-dark-muted">Panorama visuel des solutions déployées.</p>
+                    <span class="section-label" data-i18n="section4.label">04. Réalisations</span>
+                    <h2 class="section-title" data-i18n="section4.title">Galerie des Projets</h2>
+                    <p class="section-lead text-dark-muted" data-i18n="section4.lead">Panorama visuel des solutions
+                        déployées.</p>
                 </div>
 
                 <div class="gallery-grid">
@@ -376,48 +401,48 @@
                     <div class="gallery-item reveal-up" data-project-id="gal-1">
                         <img src="assets/dashboard.jpg" alt="Dashboard Analytics" class="gallery-img">
                         <div class="gallery-overlay">
-                            <h4 class="gallery-title">Dashboard Analytics</h4>
-                            <span class="gallery-cat">Data Visualization</span>
+                            <h4 class="gallery-title" data-i18n="gallery.item1.title">Dashboard Analytics</h4>
+                            <span class="gallery-cat" data-i18n="gallery.item1.cat">Data Visualization</span>
                         </div>
                     </div>
                     <!-- Gallery Item 2 -->
                     <div class="gallery-item reveal-up" data-project-id="gal-2">
                         <img src="assets/Kakiri.jpg" alt="IoT Sensors" class="gallery-img">
                         <div class="gallery-overlay">
-                            <h4 class="gallery-title">Réseau de Capteurs IoT</h4>
-                            <span class="gallery-cat">Architecture Edge</span>
+                            <h4 class="gallery-title" data-i18n="gallery.item2.title">Réseau de Capteurs IoT</h4>
+                            <span class="gallery-cat" data-i18n="gallery.item2.cat">Architecture Edge</span>
                         </div>
                     </div>
                     <!-- Gallery Item 3 -->
                     <div class="gallery-item reveal-up" data-project-id="gal-3">
                         <img src="assets/Codic1.jpg" alt="Formation Tech" class="gallery-img">
                         <div class="gallery-overlay">
-                            <h4 class="gallery-title">Formation Tech Rurale</h4>
-                            <span class="gallery-cat">Impact Social</span>
+                            <h4 class="gallery-title" data-i18n="gallery.item3.title">Formation Tech Rurale</h4>
+                            <span class="gallery-cat" data-i18n="gallery.item3.cat">Impact Social</span>
                         </div>
                     </div>
                     <!-- Gallery Item 4 -->
                     <div class="gallery-item reveal-up" data-project-id="gal-4">
                         <img src="assets/strategy.jpg" alt="Business Strategy" class="gallery-img">
                         <div class="gallery-overlay">
-                            <h4 class="gallery-title">Stratégie Business</h4>
-                            <span class="gallery-cat">Consulting</span>
+                            <h4 class="gallery-title" data-i18n="gallery.item4.title">Stratégie Business</h4>
+                            <span class="gallery-cat" data-i18n="gallery.item4.cat">Consulting</span>
                         </div>
                     </div>
                     <!-- Gallery Item 5 -->
                     <div class="gallery-item reveal-up" data-project-id="gal-5">
                         <img src="assets/market-logic.jpg" alt="Market Logic" class="gallery-img">
                         <div class="gallery-overlay">
-                            <h4 class="gallery-title">Market Logic</h4>
-                            <span class="gallery-cat">Data Science</span>
+                            <h4 class="gallery-title" data-i18n="gallery.item5.title">Market Logic</h4>
+                            <span class="gallery-cat" data-i18n="gallery.item5.cat">Data Science</span>
                         </div>
                     </div>
                     <!-- Gallery Item 6 -->
                     <div class="gallery-item reveal-up" data-project-id="gal-6">
                         <img src="assets/Codic2.jpg" alt="Mobile App" class="gallery-img">
                         <div class="gallery-overlay">
-                            <h4 class="gallery-title">Application Financière</h4>
-                            <span class="gallery-cat">Mobile Dev</span>
+                            <h4 class="gallery-title" data-i18n="gallery.item6.title">Application Financière</h4>
+                            <span class="gallery-cat" data-i18n="gallery.item6.cat">Mobile Dev</span>
                         </div>
                     </div>
                 </div>
@@ -427,18 +452,19 @@
         <!-- Contact Section -->
         <section id="contact" class="section contact-section">
             <div class="container text-center">
-                <h2 class="big-contact-title reveal-up">Construisons<br>le Futur.</h2>
-                <p class="contact-sub reveal-up">Disponible pour Consulting Stratégique & Leadership Technique.</p>
+                <h2 class="big-contact-title reveal-up" data-i18n="contact.title">Construisons<br>le Futur.</h2>
+                <p class="contact-sub reveal-up" data-i18n="contact.subtitle">Disponible pour Consulting Stratégique &
+                    Leadership Technique.</p>
 
                 <div class="contact-actions reveal-up">
                     <a href="mailto:odetokirufos@gmail.com" class="btn-magnetic">
-                        <span>Me Contacter</span>
+                        <span data-i18n="contact.cta">Me Contacter</span>
                     </a>
                     <a href="tel:+2250703785519" class="btn-magnetic outline">
                         <span>+225 07 03 78 55 19</span>
                     </a>
                     <a href="assets/Mon CV Rufos.pdf" class="btn-magnetic outline" download>
-                        <span>Télécharger mon CV</span>
+                        <span data-i18n="contact.download_cv">Télécharger mon CV</span>
                     </a>
                 </div>
 
@@ -461,15 +487,15 @@
             </div>
             <div class="modal-body">
                 <div class="modal-section">
-                    <h3>Le Défi</h3>
+                    <h3 data-i18n="modal.challenge">Le Défi</h3>
                     <p class="modal-challenge">Description du problème...</p>
                 </div>
                 <div class="modal-section">
-                    <h3>La Solution</h3>
+                    <h3 data-i18n="modal.solution">La Solution</h3>
                     <p class="modal-solution">Description de la solution...</p>
                 </div>
                 <div class="modal-section">
-                    <h3>L'Impact</h3>
+                    <h3 data-i18n="modal.impact">L'Impact</h3>
                     <p class="modal-impact">Résultats quantifiés...</p>
                 </div>
             </div>
