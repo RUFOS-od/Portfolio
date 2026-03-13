@@ -2552,3 +2552,263 @@ a {
     0%   { background-position: -200% center; }
     100% { background-position: 200% center; }
 }
+
+/* ============================================
+   SALESFLOW AI SECTION
+   ============================================ */
+.salesflow-section {
+    background: #0a0a0a;
+    overflow: hidden;
+    position: relative;
+}
+
+.salesflow-section::before {
+    content: '';
+    position: absolute;
+    top: -200px;
+    right: -200px;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(99,102,241,0.06) 0%, transparent 70%);
+    pointer-events: none;
+}
+
+.salesflow-layout {
+    display: grid;
+    grid-template-columns: 1fr 1.3fr;
+    gap: 64px;
+    align-items: center;
+    margin-top: 60px;
+    cursor: pointer;
+}
+
+/* --- Text side --- */
+.sf-text {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.sf-tagline {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.sf-tag {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    background: linear-gradient(135deg, rgba(99,102,241,0.2), rgba(236,72,153,0.15));
+    border: 1px solid rgba(99,102,241,0.3);
+    color: #818cf8;
+    padding: 5px 14px;
+    border-radius: 20px;
+}
+
+.sf-headline {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: clamp(1.6rem, 3vw, 2.4rem);
+    font-weight: 700;
+    color: #f9fafb;
+    line-height: 1.2;
+    background: linear-gradient(135deg, #e0e7ff, #c4b5fd, #f9a8d4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.sf-desc {
+    font-size: 0.95rem;
+    line-height: 1.75;
+    color: #9ca3af;
+    max-width: 460px;
+}
+
+.sf-stats {
+    display: flex;
+    gap: 28px;
+    padding: 20px 0;
+    border-top: 1px solid rgba(255,255,255,0.06);
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+
+.sf-stat {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.sf-stat-value {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, #818cf8, #ec4899);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.sf-stat-label {
+    font-size: 0.72rem;
+    color: #6b7280;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+.sf-features {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.sf-feat {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.82rem;
+    color: #d1d5db;
+}
+
+.sf-feat-icon {
+    width: 28px;
+    height: 28px;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    flex-shrink: 0;
+}
+
+.sf-icon-score { background: rgba(99,102,241,0.15); }
+.sf-icon-crm   { background: rgba(139,92,246,0.15); }
+.sf-icon-email { background: rgba(236,72,153,0.15); }
+.sf-icon-dash  { background: rgba(16,185,129,0.15); }
+
+.sf-stack {
+    margin-top: 4px;
+}
+
+/* --- Visual side --- */
+.sf-visual {
+    position: relative;
+}
+
+.sf-screen-frame {
+    position: relative;
+    border-radius: 14px;
+    overflow: hidden;
+    border: 1px solid rgba(99,102,241,0.25);
+    box-shadow:
+        0 0 0 1px rgba(99,102,241,0.1),
+        0 20px 60px rgba(0,0,0,0.6),
+        0 0 80px rgba(99,102,241,0.08);
+    transition: transform 0.4s var(--ease-premium, cubic-bezier(.23,1,.32,1)),
+                box-shadow 0.4s var(--ease-premium, cubic-bezier(.23,1,.32,1));
+}
+
+.sf-screen-frame:hover {
+    transform: translateY(-6px) scale(1.01);
+    box-shadow:
+        0 0 0 1px rgba(99,102,241,0.25),
+        0 30px 80px rgba(0,0,0,0.7),
+        0 0 120px rgba(99,102,241,0.12);
+}
+
+.sf-svg {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.sf-live-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background: rgba(16,185,129,0.15);
+    border: 1px solid rgba(16,185,129,0.3);
+    color: #10b981;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 4px 10px;
+    border-radius: 20px;
+    z-index: 2;
+}
+
+.sf-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #10b981;
+    animation: sf-pulse 1.5s infinite;
+}
+
+@keyframes sf-pulse {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.5; transform: scale(0.7); }
+}
+
+/* --- Floating badges --- */
+.sf-float {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(17,24,39,0.95);
+    border: 1px solid rgba(99,102,241,0.3);
+    color: #e0e7ff;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 8px 14px;
+    border-radius: 40px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+    white-space: nowrap;
+    animation: sf-float-anim 4s ease-in-out infinite;
+}
+
+.sf-float-1 {
+    bottom: -16px;
+    left: -20px;
+    border-color: rgba(16,185,129,0.4);
+    animation-delay: 0s;
+}
+
+.sf-float-2 {
+    top: -16px;
+    right: -16px;
+    border-color: rgba(236,72,153,0.4);
+    animation-delay: 2s;
+}
+
+.sf-float-icon {
+    font-size: 14px;
+}
+
+@keyframes sf-float-anim {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-6px); }
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .salesflow-layout {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    .sf-visual {
+        order: -1;
+    }
+    .sf-float-1, .sf-float-2 {
+        display: none;
+    }
+    .sf-stats {
+        gap: 20px;
+    }
+}

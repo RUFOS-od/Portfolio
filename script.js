@@ -246,7 +246,24 @@ document.addEventListener('DOMContentLoaded', () => {
             "floating.cta": "Me contacter",
             "modal.challenge": "Le Défi",
             "modal.solution": "La Solution",
-            "modal.impact": "L'Impact"
+            "modal.impact": "L'Impact",
+            "nav.salesflow": "SalesFlow AI",
+            "salesflow.label": "05. SaaS Product",
+            "salesflow.title": "SalesFlow AI",
+            "salesflow.lead": "De la prospection manuelle au pipeline intelligent — une plateforme full-stack qui automatise l'ensemble du cycle de vente.",
+            "salesflow.tag": "Lead Generation · CRM · Email IA",
+            "salesflow.headline": "Convertissez vos leads 3× plus vite",
+            "salesflow.desc": "Un algorithme de Lead Scoring /100, un pipeline Kanban drag & drop, un générateur d'emails personnalisés et un dashboard analytique temps réel — tout en un.",
+            "salesflow.stat1": "ROI moyen",
+            "salesflow.stat2": "Taux de conversion",
+            "salesflow.stat3": "Économisées / semaine",
+            "salesflow.feat1": "Lead Scoring IA /100",
+            "salesflow.feat2": "Pipeline CRM Kanban",
+            "salesflow.feat3": "Générateur d'Emails IA",
+            "salesflow.feat4": "Dashboard Temps Réel",
+            "salesflow.live": "Live Dashboard",
+            "salesflow.badge1": "Score : 94/100",
+            "salesflow.badge2": "+23 leads aujourd'hui"
         },
         en: {
             "nav.expertise": "Social Impact",
@@ -380,7 +397,24 @@ document.addEventListener('DOMContentLoaded', () => {
             "floating.cta": "Contact me",
             "modal.challenge": "The Challenge",
             "modal.solution": "The Solution",
-            "modal.impact": "The Impact"
+            "modal.impact": "The Impact",
+            "nav.salesflow": "SalesFlow AI",
+            "salesflow.label": "05. SaaS Product",
+            "salesflow.title": "SalesFlow AI",
+            "salesflow.lead": "From manual prospecting to intelligent pipeline — a full-stack platform that automates the entire sales cycle.",
+            "salesflow.tag": "Lead Generation · CRM · Email AI",
+            "salesflow.headline": "Convert your leads 3× faster",
+            "salesflow.desc": "A /100 Lead Scoring algorithm, a drag & drop Kanban pipeline, a personalized email generator, and a real-time analytics dashboard — all in one.",
+            "salesflow.stat1": "Average ROI",
+            "salesflow.stat2": "Conversion rate",
+            "salesflow.stat3": "Saved per week",
+            "salesflow.feat1": "AI Lead Scoring /100",
+            "salesflow.feat2": "Kanban CRM Pipeline",
+            "salesflow.feat3": "AI Email Generator",
+            "salesflow.feat4": "Real-Time Dashboard",
+            "salesflow.live": "Live Dashboard",
+            "salesflow.badge1": "Score: 94/100",
+            "salesflow.badge2": "+23 leads today"
         }
     };
 
@@ -636,6 +670,25 @@ document.addEventListener('DOMContentLoaded', () => {
                 impact: "10k+ downloads the first year."
             },
             stack: ["Flutter", "Firebase", "Bank API"]
+        },
+        "salesflow": {
+            fr: {
+                tag: "SaaS · Full-Stack",
+                title: "SalesFlow AI — Plateforme Lead Generation",
+                subtitle: "Du Lead Brut au Client Signé",
+                challenge: "Les équipes commerciales passent 70% de leur temps sur des tâches répétitives : recherche de leads, tri manuel, rédaction d'emails. Sans outil centralisé, les opportunités se perdent et le pipeline reste invisible.",
+                solution: "Conception et développement d'une plateforme SaaS complète intégrant : un algorithme de Lead Scoring IA /100 (séniorité, source, statut CRM, complétude profil), un pipeline Kanban drag & drop avec persistance, un générateur d'emails 6 templates × 4 tons, un scraper de leads contextuels et un dashboard temps réel avec KPIs calculés dynamiquement.",
+                impact: "+340% ROI estimé, 3× taux de conversion, 20h/semaine économisées par commercial. Architecture full-stack React + Node.js avec état global AppContext et localStorage."
+            },
+            en: {
+                tag: "SaaS · Full-Stack",
+                title: "SalesFlow AI — Lead Generation Platform",
+                subtitle: "From Raw Lead to Signed Client",
+                challenge: "Sales teams spend 70% of their time on repetitive tasks: lead research, manual sorting, email writing. Without a centralized tool, opportunities are lost and the pipeline remains invisible.",
+                solution: "Design and development of a complete SaaS platform integrating: an AI Lead Scoring algorithm /100 (seniority, source, CRM status, profile completeness), a drag & drop Kanban pipeline with persistence, an email generator with 6 templates × 4 tones, a contextual lead scraper, and a real-time dashboard with dynamically calculated KPIs.",
+                impact: "+340% estimated ROI, 3× conversion rate, 20h/week saved per sales rep. Full-stack React + Node.js architecture with AppContext global state and localStorage."
+            },
+            stack: ["React 19", "Tailwind CSS", "Framer Motion", "Recharts", "@dnd-kit", "Node.js", "Express"]
         }
     };
 
