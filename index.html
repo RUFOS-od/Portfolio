@@ -25,9 +25,9 @@
 
     <header class="header">
         <div class="container fluid-nav">
-            <div class="logo">ODETO<span class="dot">.</span></div>
+            <a href="#" class="logo">ODETO<span class="dot">.</span></a>
             <nav class="desktop-nav">
-                <a href="#expertise" class="nav-link" data-i18n="nav.expertise">Ingen-sociale</a>
+                <a href="#expertise" class="nav-link" data-i18n="nav.expertise">Impact Social</a>
                 <a href="#data-products" class="nav-link" data-i18n="nav.products">Data Products</a>
                 <a href="#market-intel" class="nav-link" data-i18n="nav.market">Market Intelligence</a>
                 <a href="#contact" class="nav-link" data-i18n="nav.contact">Contact</a>
@@ -50,7 +50,7 @@
     <!-- Mobile Menu Overlay -->
     <div class="mobile-menu-overlay">
         <nav class="mobile-nav">
-            <a href="#expertise" class="mobile-link" data-i18n="nav.expertise">Ingen-sociale</a>
+            <a href="#expertise" class="mobile-link" data-i18n="nav.expertise">Impact Social</a>
             <a href="#data-products" class="mobile-link" data-i18n="nav.products">Data Products</a>
             <a href="#market-intel" class="mobile-link" data-i18n="nav.market">Market Intelligence</a>
             <a href="#contact" class="mobile-link" data-i18n="nav.contact">Contact</a>
@@ -62,16 +62,30 @@
         <section class="hero-section">
             <div class="container hero-container">
                 <div class="hero-text-wrapper">
+                    <div class="hero-badge reveal-up">
+                        <span class="badge-dot"></span>
+                        <span data-i18n="hero.badge">Data • IoT • Genre & Économie</span>
+                    </div>
                     <h1 class="hero-title reveal-text">
                         <span class="line" data-i18n="hero.title1">Données Visionnaires.</span>
                         <span class="line" data-i18n="hero.title2">Impact Tangible.</span>
                     </h1>
+                    <div class="hero-specialties reveal-up">
+                        <span data-i18n="hero.rotating.prefix">Je suis </span>
+                        <span class="specialty-text" id="specialty-rotating"></span>
+                    </div>
                     <p class="hero-subtitle reveal-text delay-1" data-i18n="hero.subtitle">
-                        Je transforme l'incertitude algorithmique en <span class="highlight">Dominance
-                            Commerciale</span>.
-                        Expertise hybride entre <span class="highlight">Data Science</span> et <span
-                            class="highlight">Stratégie Business</span>.
+                        Triple expertise en <span class="highlight">Data Science</span>, <span class="highlight">Architecture IoT</span> et <span class="highlight">Économie du Genre</span>. Créateur du 1er BSG Numérique d'Afrique Francophone.
                     </p>
+                    <div class="hero-cta reveal-up delay-2">
+                        <a href="#contact" class="btn-hero-primary">
+                            <span data-i18n="hero.cta.primary">Démarrer un projet</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="#data-products" class="btn-hero-secondary">
+                            <span data-i18n="hero.cta.secondary">Voir mes travaux</span>
+                        </a>
+                    </div>
                 </div>
 
                 <div class="hero-visual reveal-up delay-2">
@@ -90,12 +104,37 @@
         <!-- Marquee Strip -->
         <div class="marquee-section">
             <div class="marquee-content">
-                <span>STRATÉGIE • DATA SCIENCE • SPSS • IOT ARCHITECTURE • SURVEYTOGO • MARKET INTELLIGENCE • ATLAS.TI •
-                    LEADERSHIP • Genre • Développement Durable • </span>
-                <span>STRATÉGIE • DATA SCIENCE • SPSS • IOT ARCHITECTURE • SURVEYTOGO • MARKET INTELLIGENCE • ATLAS.TI •
-                    LEADERSHIP • Genre • Développement Durable • </span>
+                <span>STRATÉGIE • DATA SCIENCE • BSG NUMÉRIQUE™ • IOT ARCHITECTURE • CHAIRE UNESCO • MARKET INTELLIGENCE • GENRE & ÉCONOMIE • MACROÉCONOMIE • ATLAS.TI • INCLUSION FINANCIÈRE • LEADERSHIP • DÉVELOPPEMENT DURABLE • </span>
+                <span>STRATÉGIE • DATA SCIENCE • BSG NUMÉRIQUE™ • IOT ARCHITECTURE • CHAIRE UNESCO • MARKET INTELLIGENCE • GENRE & ÉCONOMIE • MACROÉCONOMIE • ATLAS.TI • INCLUSION FINANCIÈRE • LEADERSHIP • DÉVELOPPEMENT DURABLE • </span>
             </div>
         </div>
+
+        <!-- Stats Strip -->
+        <section class="stats-section reveal-up">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="5">0</span><span class="stat-plus">+</span>
+                        <p class="stat-label" data-i18n="stats.experience">ans d'expérience</p>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="20">0</span><span class="stat-plus">+</span>
+                        <p class="stat-label" data-i18n="stats.projects">projets livrés</p>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="3">0</span>
+                        <p class="stat-label" data-i18n="stats.countries">pays d'intervention</p>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="2000">0</span><span class="stat-plus">+</span>
+                        <p class="stat-label" data-i18n="stats.beneficiaries">bénéficiaires impactés</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <!-- Brief Intro / Philosophy -->
         <section class="philosophy-section">
@@ -106,13 +145,63 @@
                         class="gradient-text">capteurs en solutions</span>."
                 </p>
                 <div class="tags-row reveal-up">
+                    <span class="pill pill-gold"><i class="fas fa-university"></i> Chaire UNESCO</span>
+                    <span class="pill pill-gold"><i class="fas fa-medal"></i> 1er BSG Afrique Fr.</span>
                     <span class="pill">OpinionWay SSA</span>
-                    <span class="pill">Kondro Networks</span>
                     <span class="pill">Orange Côte d'Ivoire</span>
                     <span class="pill">Orange Corners</span>
+                    <span class="pill">Kondro Networks</span>
                     <span class="pill">Ivoirie Geek School</span>
-                    <span class="pill">Genre</span>
-                    <span class="pill">Développement Durable</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: Triple Expertise Pillars -->
+        <section id="expertise-pillars" class="section expertise-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-label" data-i18n="expertise.label">Triple Expertise</span>
+                    <h2 class="section-title" data-i18n="expertise.title">Trois Piliers d'Excellence</h2>
+                    <p class="section-lead" data-i18n="expertise.lead">Une convergence rare entre la science des données, l'ingénierie des systèmes et l'économie inclusive du genre.</p>
+                </div>
+                <div class="expertise-grid">
+                    <!-- Pilier 1: Data -->
+                    <div class="expertise-card reveal-up">
+                        <div class="ep-top">
+                            <div class="ep-icon ep-icon--data"><i class="fas fa-brain"></i></div>
+                            <h3 data-i18n="expertise.data.title">Data Science & IA</h3>
+                        </div>
+                        <p data-i18n="expertise.data.desc">Modélisation prédictive, NLP et analyse avancée pour transformer la donnée brute en intelligence décisionnelle à haute valeur ajoutée.</p>
+                        <div class="ep-skills">
+                            <span>Python / R</span><span>SPSS / IBM</span><span>Machine Learning</span><span>NLP</span><span>Analyse Conjointe</span><span>Data Viz</span>
+                        </div>
+                    </div>
+                    <!-- Pilier 2: IoT -->
+                    <div class="expertise-card reveal-up">
+                        <div class="ep-top">
+                            <div class="ep-icon ep-icon--iot"><i class="fas fa-microchip"></i></div>
+                            <h3 data-i18n="expertise.iot.title">Informatique & IoT</h3>
+                        </div>
+                        <p data-i18n="expertise.iot.desc">Architecture des systèmes Edge Computing et réseaux de capteurs connectés. Traitement de la donnée à la source pour une réactivité critique.</p>
+                        <div class="ep-skills">
+                            <span>Edge Computing</span><span>Architecture IoT</span><span>SurveyTogo</span><span>KoboToolBox</span><span>Orange CI</span><span>Systèmes embarqués</span>
+                        </div>
+                    </div>
+                    <!-- Pilier 3: Genre — Featured -->
+                    <div class="expertise-card expertise-card--gender reveal-up">
+                        <div class="ep-badges">
+                            <span class="ep-badge-gold"><i class="fas fa-university"></i> Chaire UNESCO</span>
+                            <span class="ep-badge-first">1er Afrique Francophone</span>
+                        </div>
+                        <div class="ep-top">
+                            <div class="ep-icon ep-icon--gender"><i class="fas fa-balance-scale"></i></div>
+                            <h3 data-i18n="expertise.gender.title">Genre & Économie Durable</h3>
+                        </div>
+                        <p data-i18n="expertise.gender.desc">Pionnier du BSG Numérique en Afrique francophone. Candidat à la Chaire UNESCO pour un Master en Genre, Économie et Gestion Durable de l'Eau — spécialité Cadrage Macroéconomique et Budgétisation Sensible au Genre.</p>
+                        <div class="ep-skills">
+                            <span>BSG Numérique™</span><span>Macroéconomie</span><span>Gender Analytics</span><span>UNESCO</span><span>Inclusion Financière</span><span>Politique Publique</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -449,28 +538,191 @@
             </div>
         </section>
 
+        <!-- Section: Innovation Signature — BSG Numérique & UNESCO -->
+        <section class="section innovation-section dark-section">
+            <div class="container">
+                <div class="innovation-layout">
+                    <!-- Left: Text -->
+                    <div class="innov-text reveal-up">
+                        <div class="innov-pretitle">
+                            <span class="innov-award-badge">
+                                <i class="fas fa-award"></i>
+                                <span data-i18n="innovation.pretitle">Première en Afrique Francophone</span>
+                            </span>
+                        </div>
+                        <h2 class="innov-title">
+                            <span data-i18n="innovation.title">BSG Numérique</span><sup class="innov-tm">™</sup>
+                        </h2>
+                        <p class="innov-desc" data-i18n="innovation.desc">Le premier outil de Budgétisation Sensible au Genre entièrement numérisé d'Afrique francophone. Un moteur d'audit analytique automatisé qui transforme les données budgétaires publiques en indicateurs d'équité sociale — et oriente la dépense publique vers une justice distributive mesurable.</p>
+
+                        <div class="innov-cards-row">
+                            <div class="innov-info-card">
+                                <div class="innov-card-icon"><i class="fas fa-graduation-cap"></i></div>
+                                <div>
+                                    <span class="innov-card-label" data-i18n="innovation.unesco.label">Chaire UNESCO</span>
+                                    <h4 data-i18n="innovation.unesco.title">Master Genre, Économie & Eau</h4>
+                                    <p data-i18n="innovation.unesco.desc">Master en « Genre, Économie et Gestion Durable de l'Eau » — spécialité Cadrage Macroéconomique et BSG, en préparation à la Chaire UNESCO.</p>
+                                </div>
+                            </div>
+                            <div class="innov-info-card innov-info-card--gold">
+                                <div class="innov-card-icon"><i class="fas fa-medal"></i></div>
+                                <div>
+                                    <span class="innov-card-label" data-i18n="innovation.bsg.label">Innovation Exclusive</span>
+                                    <h4 data-i18n="innovation.bsg.title">Africa First — Digital GRB</h4>
+                                    <p data-i18n="innovation.bsg.desc">Déployé auprès de mairies pilotes, le BSG Numérique réoriente la dépense publique vers l'équité de genre via des indicateurs de performance sociale concrets.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#contact" class="btn-hero-primary innov-cta">
+                            <span data-i18n="innovation.cta">Discuter de ce projet</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+
+                    <!-- Right: Animated Visual -->
+                    <div class="innov-visual reveal-up">
+                        <div class="bsg-orb-wrapper">
+                            <div class="bsg-ring bsg-ring--outer"></div>
+                            <div class="bsg-ring bsg-ring--mid"></div>
+                            <div class="bsg-ring bsg-ring--inner"></div>
+                            <div class="bsg-core">
+                                <span class="bsg-core-text">BSG</span>
+                                <span class="bsg-core-sub" data-i18n="bsg.core.sub">Numérique™</span>
+                            </div>
+                            <div class="bsg-orbit-icon bsg-oi--1"><i class="fas fa-venus-mars"></i></div>
+                            <div class="bsg-orbit-icon bsg-oi--2"><i class="fas fa-chart-line"></i></div>
+                            <div class="bsg-orbit-icon bsg-oi--3"><i class="fas fa-landmark"></i></div>
+                            <div class="bsg-orbit-icon bsg-oi--4"><i class="fas fa-coins"></i></div>
+                        </div>
+                        <div class="bsg-stat-strip">
+                            <div class="bsg-stat">
+                                <span class="bsg-stat-num">2</span>
+                                <span class="bsg-stat-label" data-i18n="bsg.stat1">Mairies pilotes</span>
+                            </div>
+                            <div class="bsg-stat-sep"></div>
+                            <div class="bsg-stat">
+                                <span class="bsg-stat-num">1<sup>er</sup></span>
+                                <span class="bsg-stat-label" data-i18n="bsg.stat2">Afrique fr.</span>
+                            </div>
+                            <div class="bsg-stat-sep"></div>
+                            <div class="bsg-stat">
+                                <span class="bsg-stat-num">∞</span>
+                                <span class="bsg-stat-label" data-i18n="bsg.stat3">Impact social</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Contact Section -->
         <section id="contact" class="section contact-section">
-            <div class="container text-center">
-                <h2 class="big-contact-title reveal-up" data-i18n="contact.title">Construisons<br>le Futur.</h2>
-                <p class="contact-sub reveal-up" data-i18n="contact.subtitle">Disponible pour Consulting Stratégique &
-                    Leadership Technique.</p>
+            <div class="container">
+                <div class="contact-layout">
+                    <!-- Left: Title & Info -->
+                    <div class="contact-left reveal-up">
+                        <h2 class="big-contact-title" data-i18n="contact.title">Construisons<br>le Futur.</h2>
+                        <p class="contact-sub" data-i18n="contact.subtitle">Disponible pour Consulting Stratégique &
+                            Leadership Technique.</p>
 
-                <div class="contact-actions reveal-up">
-                    <a href="mailto:odetokirufos@gmail.com" class="btn-magnetic">
-                        <span data-i18n="contact.cta">Me Contacter</span>
-                    </a>
-                    <a href="tel:+2250703785519" class="btn-magnetic outline">
-                        <span>+225 07 03 78 55 19</span>
-                    </a>
-                    <a href="assets/Mon CV Rufos.pdf" class="btn-magnetic outline" download>
-                        <span data-i18n="contact.download_cv">Télécharger mon CV</span>
-                    </a>
-                </div>
+                        <div class="contact-info-cards">
+                            <a href="mailto:odetokirufos@gmail.com" class="contact-info-card">
+                                <div class="contact-info-icon"><i class="fas fa-envelope"></i></div>
+                                <div>
+                                    <span class="contact-info-label" data-i18n="contact.info.email">Email</span>
+                                    <p>odetokirufos@gmail.com</p>
+                                </div>
+                            </a>
+                            <a href="tel:+2250703785519" class="contact-info-card">
+                                <div class="contact-info-icon"><i class="fas fa-phone"></i></div>
+                                <div>
+                                    <span class="contact-info-label" data-i18n="contact.info.phone">Téléphone</span>
+                                    <p>+225 07 03 78 55 19</p>
+                                </div>
+                            </a>
+                            <a href="https://www.linkedin.com/in/od-rufos" target="_blank" class="contact-info-card">
+                                <div class="contact-info-icon"><i class="fab fa-linkedin"></i></div>
+                                <div>
+                                    <span class="contact-info-label">LinkedIn</span>
+                                    <p>linkedin.com/in/od-rufos</p>
+                                </div>
+                            </a>
+                        </div>
 
-                <div class="footer-links">
-                    <a href="https://www.linkedin.com/in/od-rufos" target="_blank">LinkedIn</a>
-                    <a href="https://github.com/RUFOS-od" target="_blank">GitHub</a>
+                        <div class="contact-direct-actions">
+                            <a href="assets/Mon CV Rufos.pdf" class="btn-magnetic outline" download>
+                                <i class="fas fa-download"></i>
+                                <span data-i18n="contact.download_cv">Télécharger mon CV</span>
+                            </a>
+                            <a href="https://github.com/RUFOS-od" target="_blank" class="btn-magnetic outline">
+                                <i class="fab fa-github"></i>
+                                <span>GitHub</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Right: Contact Form -->
+                    <div class="contact-right reveal-up">
+                        <div class="contact-form-wrapper">
+                            <div class="form-header">
+                                <span class="section-label" data-i18n="contact.form.label">Envoyez un message</span>
+                                <h3 data-i18n="contact.form.title">Parlons de votre projet</h3>
+                            </div>
+
+                            <!-- IMPORTANT: Remplacez YOUR_FORM_ID par votre ID Formspree obtenu sur formspree.io -->
+                            <form id="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="name" data-i18n="form.name">Nom complet</label>
+                                        <input type="text" id="name" name="name" required
+                                            data-i18n-placeholder="form.name.placeholder" placeholder="John Doe">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email" data-i18n="form.email">Email</label>
+                                        <input type="email" id="email" name="email" required
+                                            data-i18n-placeholder="form.email.placeholder"
+                                            placeholder="john@example.com">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="org" data-i18n="form.org">Organisation (optionnel)</label>
+                                    <input type="text" id="org" name="organisation"
+                                        data-i18n-placeholder="form.org.placeholder" placeholder="Votre entreprise">
+                                </div>
+                                <div class="form-group">
+                                    <label for="subject" data-i18n="form.subject">Objet de la demande</label>
+                                    <select id="subject" name="subject">
+                                        <option value="" data-i18n="form.subject.default">Sélectionnez...</option>
+                                        <option value="consulting" data-i18n="form.subject.consulting">Consulting Data / IA</option>
+                                        <option value="market-research" data-i18n="form.subject.research">Étude de marché</option>
+                                        <option value="training" data-i18n="form.subject.training">Formation</option>
+                                        <option value="partnership" data-i18n="form.subject.partnership">Partenariat</option>
+                                        <option value="other" data-i18n="form.subject.other">Autre</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="message" data-i18n="form.message">Message</label>
+                                    <textarea id="message" name="message" rows="5" required
+                                        data-i18n-placeholder="form.message.placeholder"
+                                        placeholder="Décrivez votre projet ou votre besoin..."></textarea>
+                                </div>
+                                <button type="submit" class="btn-submit">
+                                    <span class="btn-submit-text" data-i18n="form.submit">Envoyer le message</span>
+                                    <i class="fas fa-paper-plane"></i>
+                                </button>
+                            </form>
+
+                            <!-- Success / Error Messages -->
+                            <div id="form-success" class="form-feedback success" style="display:none;">
+                                <i class="fas fa-check-circle"></i>
+                                <p data-i18n="form.success">Message envoyé avec succès ! Je vous répondrai dans les 24h.</p>
+                            </div>
+                            <div id="form-error" class="form-feedback error" style="display:none;">
+                                <i class="fas fa-exclamation-circle"></i>
+                                <p data-i18n="form.error">Une erreur est survenue. Veuillez réessayer ou m'écrire directement.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -506,6 +758,12 @@
             </div>
         </div>
     </div>
+
+    <!-- Floating Contact Button -->
+    <a href="#contact" class="floating-contact-btn" id="floating-cta" aria-label="Me contacter">
+        <i class="fas fa-comment-dots"></i>
+        <span data-i18n="floating.cta">Me contacter</span>
+    </a>
 
     <script src="script.js"></script>
 </body>

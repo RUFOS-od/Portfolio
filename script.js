@@ -142,13 +142,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const translations = {
         fr: {
-            "nav.expertise": "Ingen-sociale",
+            "nav.expertise": "Impact Social",
             "nav.products": "Data Products",
             "nav.market": "Market Intelligence",
             "nav.contact": "Contact",
             "hero.title1": "Données Visionnaires.",
             "hero.title2": "Impact Tangible.",
-            "hero.subtitle": "Je transforme l'incertitude algorithmique en <span class=\"highlight\">Dominance Commerciale</span>. Expertise hybride entre <span class=\"highlight\">Data Science</span> et <span class=\"highlight\">Stratégie Business</span>.",
+            "hero.subtitle": "Triple expertise en <span class=\"highlight\">Data Science</span>, <span class=\"highlight\">Architecture IoT</span> et <span class=\"highlight\">Économie du Genre</span>. Créateur du 1er BSG Numérique d'Afrique Francophone.",
             "hero.scroll": "Explorer",
             "philosophy.statement": "\"La donnée n'est que du bruit sans stratégie. J'architecte des systèmes qui convertissent <span class=\"gradient-text\">des téraoctets en revenus</span> et des <span class=\"gradient-text\">capteurs en solutions</span>.\"",
             "section1.label": "01. Innovation",
@@ -210,18 +210,77 @@ document.addEventListener('DOMContentLoaded', () => {
             "contact.subtitle": "Disponible pour Consulting Stratégique & Leadership Technique.",
             "contact.cta": "Me Contacter",
             "contact.download_cv": "Télécharger mon CV",
+            "contact.info.email": "Email",
+            "contact.info.phone": "Téléphone",
+            "contact.form.label": "Envoyez un message",
+            "contact.form.title": "Parlons de votre projet",
+            "form.name": "Nom complet",
+            "form.name.placeholder": "Votre nom",
+            "form.email": "Email professionnel",
+            "form.email.placeholder": "vous@exemple.com",
+            "form.org": "Organisation (optionnel)",
+            "form.org.placeholder": "Votre entreprise ou institution",
+            "form.subject": "Objet de la demande",
+            "form.subject.default": "Sélectionnez un sujet...",
+            "form.subject.consulting": "Consulting Data / IA",
+            "form.subject.research": "Étude de marché",
+            "form.subject.training": "Formation",
+            "form.subject.partnership": "Partenariat",
+            "form.subject.other": "Autre",
+            "form.message": "Votre message",
+            "form.message.placeholder": "Décrivez votre projet ou votre besoin...",
+            "form.submit": "Envoyer le message",
+            "form.success": "Message envoyé avec succès ! Je vous répondrai dans les 24h.",
+            "form.error": "Une erreur est survenue. Veuillez réessayer ou m'écrire directement.",
+            "stats.experience": "ans d'expérience",
+            "stats.projects": "projets livrés",
+            "stats.countries": "pays d'intervention",
+            "stats.beneficiaries": "bénéficiaires impactés",
+            "hero.badge": "Data • IoT • Genre & Économie",
+            "hero.rotating.prefix": "Je suis ",
+            "hero.rotating.1": "Data Scientist",
+            "hero.rotating.2": "Architecte IoT",
+            "hero.rotating.3": "Expert Genre",
+            "hero.rotating.4": "Macroéconomiste",
+            "hero.rotating.5": "Consultant Stratégique",
+            "expertise.label": "Triple Expertise",
+            "expertise.title": "Trois Piliers d'Excellence",
+            "expertise.lead": "Une convergence rare entre la science des données, l'ingénierie des systèmes et l'économie inclusive du genre.",
+            "expertise.data.title": "Data Science & IA",
+            "expertise.data.desc": "Modélisation prédictive, NLP et analyse avancée pour transformer la donnée brute en intelligence décisionnelle à haute valeur ajoutée.",
+            "expertise.iot.title": "Informatique & IoT",
+            "expertise.iot.desc": "Architecture des systèmes Edge Computing et réseaux de capteurs connectés. Traitement de la donnée à la source pour une réactivité critique.",
+            "expertise.gender.title": "Genre & Économie Durable",
+            "expertise.gender.desc": "Pionnier du BSG Numérique en Afrique francophone. Candidat à la Chaire UNESCO pour un Master en Genre, Économie et Gestion Durable de l'Eau — spécialité Cadrage Macroéconomique et BSG.",
+            "innovation.pretitle": "Première en Afrique Francophone",
+            "innovation.title": "BSG Numérique",
+            "innovation.desc": "Le premier outil de Budgétisation Sensible au Genre entièrement numérisé d'Afrique francophone. Un moteur d'audit analytique automatisé qui transforme les données budgétaires publiques en indicateurs d'équité sociale.",
+            "innovation.unesco.label": "Chaire UNESCO",
+            "innovation.unesco.title": "Master Genre, Économie & Eau",
+            "innovation.unesco.desc": "Master en « Genre, Économie et Gestion Durable de l'Eau » — spécialité Cadrage Macroéconomique et BSG, en préparation à la Chaire UNESCO.",
+            "innovation.bsg.label": "Innovation Exclusive",
+            "innovation.bsg.title": "Africa First — Digital GRB",
+            "innovation.bsg.desc": "Déployé auprès de mairies pilotes, le BSG Numérique réoriente la dépense publique vers l'équité de genre via des indicateurs de performance sociale concrets.",
+            "innovation.cta": "Discuter de ce projet",
+            "bsg.core.sub": "Numérique™",
+            "bsg.stat1": "Mairies pilotes",
+            "bsg.stat2": "Afrique fr.",
+            "bsg.stat3": "Impact social",
+            "hero.cta.primary": "Démarrer un projet",
+            "hero.cta.secondary": "Voir mes travaux",
+            "floating.cta": "Me contacter",
             "modal.challenge": "Le Défi",
             "modal.solution": "La Solution",
             "modal.impact": "L'Impact"
         },
         en: {
-            "nav.expertise": "Social Engineering",
+            "nav.expertise": "Social Impact",
             "nav.products": "Data Products",
             "nav.market": "Market Intelligence",
             "nav.contact": "Contact",
             "hero.title1": "Visionary Data.",
             "hero.title2": "Tangible Impact.",
-            "hero.subtitle": "I turn algorithmic uncertainty into <span class=\"highlight\">Market Dominance</span>. Hybrid expertise between <span class=\"highlight\">Data Science</span> and <span class=\"highlight\">Business Strategy</span>.",
+            "hero.subtitle": "Triple expertise in <span class=\"highlight\">Data Science</span>, <span class=\"highlight\">IoT Architecture</span> and <span class=\"highlight\">Gender Economics</span>. Creator of the 1st Digital GRB in Francophone Africa.",
             "hero.scroll": "Explore",
             "philosophy.statement": "\"Data is just noise without strategy. I architect systems that convert <span class=\"gradient-text\">terabytes into revenue</span> and <span class=\"gradient-text\">sensors into solutions</span>.\"",
             "section1.label": "01. Innovation",
@@ -283,6 +342,65 @@ document.addEventListener('DOMContentLoaded', () => {
             "contact.subtitle": "Available for Strategic Consulting & Technical Leadership.",
             "contact.cta": "Contact Me",
             "contact.download_cv": "Download my CV",
+            "contact.info.email": "Email",
+            "contact.info.phone": "Phone",
+            "contact.form.label": "Send a message",
+            "contact.form.title": "Let's talk about your project",
+            "form.name": "Full name",
+            "form.name.placeholder": "Your name",
+            "form.email": "Professional email",
+            "form.email.placeholder": "you@example.com",
+            "form.org": "Organisation (optional)",
+            "form.org.placeholder": "Your company or institution",
+            "form.subject": "Request subject",
+            "form.subject.default": "Select a topic...",
+            "form.subject.consulting": "Data / AI Consulting",
+            "form.subject.research": "Market Research",
+            "form.subject.training": "Training",
+            "form.subject.partnership": "Partnership",
+            "form.subject.other": "Other",
+            "form.message": "Your message",
+            "form.message.placeholder": "Describe your project or need...",
+            "form.submit": "Send message",
+            "form.success": "Message sent successfully! I'll reply within 24h.",
+            "form.error": "An error occurred. Please try again or write to me directly.",
+            "stats.experience": "years of experience",
+            "stats.projects": "projects delivered",
+            "stats.countries": "countries",
+            "stats.beneficiaries": "people impacted",
+            "hero.badge": "Data • IoT • Gender & Economy",
+            "hero.rotating.prefix": "I am a ",
+            "hero.rotating.1": "Data Scientist",
+            "hero.rotating.2": "IoT Architect",
+            "hero.rotating.3": "Gender Expert",
+            "hero.rotating.4": "Macroeconomist",
+            "hero.rotating.5": "Strategic Consultant",
+            "expertise.label": "Triple Expertise",
+            "expertise.title": "Three Pillars of Excellence",
+            "expertise.lead": "A rare convergence of data science, systems engineering, and inclusive gender economics.",
+            "expertise.data.title": "Data Science & AI",
+            "expertise.data.desc": "Predictive modeling, NLP and advanced analysis to transform raw data into high-value decision intelligence.",
+            "expertise.iot.title": "Computer Science & IoT",
+            "expertise.iot.desc": "Edge Computing system architecture and connected sensor networks. Data processing at the source for critical millisecond responsiveness.",
+            "expertise.gender.title": "Gender & Sustainable Economy",
+            "expertise.gender.desc": "Pioneer of Digital GRB in Francophone Africa. Candidate at UNESCO Chair for a Master's in Gender, Economy and Sustainable Water Management — specialization in Macroeconomic Framework and Gender Responsive Budgeting.",
+            "innovation.pretitle": "First in Francophone Africa",
+            "innovation.title": "Digital GRB",
+            "innovation.desc": "The first fully digitized Gender Responsive Budgeting tool in Francophone Africa. An automated analytical audit engine that transforms public budget data into social equity indicators.",
+            "innovation.unesco.label": "UNESCO Chair",
+            "innovation.unesco.title": "Master Gender, Economy & Water",
+            "innovation.unesco.desc": "Master's in \"Gender, Economy and Sustainable Water Management\" — specialization in Macroeconomic Framework and GRB, in preparation for the UNESCO Chair.",
+            "innovation.bsg.label": "Exclusive Innovation",
+            "innovation.bsg.title": "Africa First — Digital GRB",
+            "innovation.bsg.desc": "Deployed in pilot municipalities, the Digital GRB redirects public spending toward gender equity through concrete social performance indicators.",
+            "innovation.cta": "Discuss this project",
+            "bsg.core.sub": "Digital™",
+            "bsg.stat1": "Pilot municipalities",
+            "bsg.stat2": "Francophone Africa",
+            "bsg.stat3": "Social impact",
+            "hero.cta.primary": "Start a project",
+            "hero.cta.secondary": "See my work",
+            "floating.cta": "Contact me",
             "modal.challenge": "The Challenge",
             "modal.solution": "The Solution",
             "modal.impact": "The Impact"
@@ -563,12 +681,20 @@ document.addEventListener('DOMContentLoaded', () => {
         elements.forEach(el => {
             const key = el.getAttribute('data-i18n');
             if (translations[lang] && translations[lang][key]) {
-                // Check if it's an innerHTML update (for tags inside) or textContent
                 if (translations[lang][key].includes('<')) {
                     el.innerHTML = translations[lang][key];
                 } else {
                     el.textContent = translations[lang][key];
                 }
+            }
+        });
+
+        // Update placeholders
+        const placeholderEls = document.querySelectorAll('[data-i18n-placeholder]');
+        placeholderEls.forEach(el => {
+            const key = el.getAttribute('data-i18n-placeholder');
+            if (translations[lang] && translations[lang][key]) {
+                el.placeholder = translations[lang][key];
             }
         });
     }
@@ -645,5 +771,124 @@ document.addEventListener('DOMContentLoaded', () => {
             closeModal();
         }
     });
+
+    // --- 7. Formspree Contact Form ---
+    const contactForm = document.getElementById('contact-form');
+    const formSuccess = document.getElementById('form-success');
+    const formError = document.getElementById('form-error');
+
+    if (contactForm) {
+        contactForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const submitBtn = contactForm.querySelector('.btn-submit');
+            submitBtn.classList.add('loading');
+            formSuccess.style.display = 'none';
+            formError.style.display = 'none';
+
+            try {
+                const response = await fetch(contactForm.action, {
+                    method: 'POST',
+                    body: new FormData(contactForm),
+                    headers: { 'Accept': 'application/json' }
+                });
+
+                if (response.ok) {
+                    contactForm.reset();
+                    contactForm.style.display = 'none';
+                    formSuccess.style.display = 'flex';
+                } else {
+                    formError.style.display = 'flex';
+                }
+            } catch {
+                formError.style.display = 'flex';
+            } finally {
+                submitBtn.classList.remove('loading');
+            }
+        });
+    }
+
+    // --- 8. Hero Rotating Specialties ---
+    const specialtyEl = document.getElementById('specialty-rotating');
+    const specialtiesByLang = {
+        fr: ['Data Scientist', 'Architecte IoT', 'Expert Genre', 'Macroéconomiste', 'Consultant Stratégique'],
+        en: ['Data Scientist', 'IoT Architect', 'Gender Expert', 'Macroeconomist', 'Strategic Consultant']
+    };
+    let specialtyIndex = 0;
+    let specialtyTyping = null;
+
+    function typeSpecialty(text, cb) {
+        if (specialtyEl) {
+            specialtyEl.textContent = '';
+            let i = 0;
+            const interval = setInterval(() => {
+                specialtyEl.textContent += text[i++];
+                if (i >= text.length) { clearInterval(interval); if (cb) cb(); }
+            }, 60);
+        }
+    }
+
+    function eraseSpecialty(cb) {
+        if (specialtyEl) {
+            const interval = setInterval(() => {
+                const t = specialtyEl.textContent;
+                if (t.length === 0) { clearInterval(interval); if (cb) cb(); return; }
+                specialtyEl.textContent = t.slice(0, -1);
+            }, 35);
+        }
+    }
+
+    function cycleSpecialty() {
+        const list = specialtiesByLang[currentLang] || specialtiesByLang.fr;
+        typeSpecialty(list[specialtyIndex], () => {
+            specialtyTyping = setTimeout(() => {
+                eraseSpecialty(() => {
+                    specialtyIndex = (specialtyIndex + 1) % list.length;
+                    specialtyTyping = setTimeout(cycleSpecialty, 300);
+                });
+            }, 2200);
+        });
+    }
+
+    if (specialtyEl) {
+        setTimeout(cycleSpecialty, 800);
+    }
+
+    // --- 9. Stats Counter Animation ---
+    const statNumbers = document.querySelectorAll('.stat-number[data-target]');
+    const statsObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const el = entry.target;
+                const target = parseInt(el.getAttribute('data-target'), 10);
+                const duration = 1800;
+                const start = performance.now();
+
+                function tick(now) {
+                    const elapsed = now - start;
+                    const progress = Math.min(elapsed / duration, 1);
+                    const eased = 1 - Math.pow(1 - progress, 3);
+                    el.textContent = Math.round(eased * target);
+                    if (progress < 1) requestAnimationFrame(tick);
+                }
+
+                requestAnimationFrame(tick);
+                statsObserver.unobserve(el);
+            }
+        });
+    }, { threshold: 0.5 });
+
+    statNumbers.forEach(el => statsObserver.observe(el));
+
+    // --- 9. Floating Contact Button Visibility ---
+    const floatingBtn = document.getElementById('floating-cta');
+    if (floatingBtn) {
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 400) {
+                floatingBtn.classList.add('visible');
+            } else {
+                floatingBtn.classList.remove('visible');
+            }
+        }, { passive: true });
+    }
 
 });
