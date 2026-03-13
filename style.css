@@ -299,7 +299,27 @@ a {
     padding: 30px 0;
     mix-blend-mode: exclusion;
     color: white;
-    /* Forced white for exclusion effect */
+    transition:
+        padding 0.45s cubic-bezier(0.4, 0, 0.2, 1),
+        background 0.45s cubic-bezier(0.4, 0, 0.2, 1),
+        transform 0.45s cubic-bezier(0.4, 0, 0.2, 1),
+        box-shadow 0.45s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Scrolled state — glass background, no blend mode */
+.header--scrolled {
+    mix-blend-mode: normal;
+    background: rgba(10, 10, 10, 0.82);
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+    padding: 14px 0;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.06),
+                0 8px 32px rgba(0, 0, 0, 0.4);
+}
+
+/* Hide on scroll down, reveal on scroll up */
+.header--hidden {
+    transform: translateY(-100%);
 }
 
 .fluid-nav {

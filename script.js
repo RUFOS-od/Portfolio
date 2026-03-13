@@ -856,16 +856,50 @@ document.addEventListener('DOMContentLoaded', () => {
 
     statNumbers.forEach(el => statsObserver.observe(el));
 
-    // --- 9. Floating Contact Button Visibility ---
+    // --- 9. Navbar scroll behaviour + Floating button visibility ---
+    const headerEl = document.querySelector('.header');
     const floatingBtn = document.getElementById('floating-cta');
-    if (floatingBtn) {
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 400) {
+    let lastScrollY = 0;
+    let ticking = false;
+
+    function onScroll() {
+        const scrollY = window.scrollY;
+
+        // Navbar: scrolled state
+        if (scrollY > 60) {
+            headerEl.classList.add('header--scrolled');
+        } else {
+            headerEl.classList.remove('header--scrolled');
+            headerEl.classList.remove('header--hidden'); // always show at top
+        }
+
+        // Navbar: hide on scroll down, show on scroll up (only when scrolled past hero)
+        if (scrollY > 300) {
+            if (scrollY > lastScrollY + 8) {
+                headerEl.classList.add('header--hidden');
+            } else if (scrollY < lastScrollY - 4) {
+                headerEl.classList.remove('header--hidden');
+            }
+        }
+
+        // Floating CTA visibility
+        if (floatingBtn) {
+            if (scrollY > 400) {
                 floatingBtn.classList.add('visible');
             } else {
                 floatingBtn.classList.remove('visible');
             }
-        }, { passive: true });
+        }
+
+        lastScrollY = scrollY;
+        ticking = false;
     }
+
+    window.addEventListener('scroll', () => {
+        if (!ticking) {
+            requestAnimationFrame(onScroll);
+            ticking = true;
+        }
+    }, { passive: true });
 
 });
