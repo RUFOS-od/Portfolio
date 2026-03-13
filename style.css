@@ -36,311 +36,9 @@
     /* Transitions */
     --ease-premium: cubic-bezier(0.4, 0, 0.2, 1);
     --ease-bounce: cubic-bezier(0.68, -0.55, 0.265, 1.55);
-
-    /* Light Mode Variables (Enhanced) */
-    --light-bg-dark: #fafafa;
-    --light-bg-panel: #f5f5f5;
-    --light-bg-elevated: #ffffff;
-    --light-text-main: #1a1a1a;
-    --light-text-muted: #374151;
-    --light-text-dim: #595959;
 }
 
-body.light-mode {
-    --bg-dark: var(--light-bg-dark);
-    --bg-panel: var(--light-bg-panel);
-    --bg-elevated: var(--light-bg-elevated);
-    --text-main: var(--light-text-main);
-    --text-muted: var(--light-text-muted);
-    --text-dim: var(--light-text-dim);
-    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.06);
-    --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.08), 0 2px 8px rgba(0, 0, 0, 0.06);
-    --shadow-lg: 0 16px 48px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.08);
-    --shadow-xl: 0 24px 64px rgba(0, 0, 0, 0.14), 0 12px 24px rgba(0, 0, 0, 0.1);
-    --accent-glow: rgba(67, 206, 162, 0.2);
-}
-
-/* Fix for Light Section in Light Mode */
-body.light-mode .light-section {
-    background: #1f2937;
-    color: #f3f4f6;
-}
-
-body.light-mode .light-section .section-label,
-body.light-mode .light-section .section-title,
-body.light-mode .light-section p,
-body.light-mode .light-section .intel-icon {
-    color: inherit;
-}
-
-body.light-mode .light-section .intel-desc {
-    color: #9ca3af;
-}
-
-body.light-mode .light-section .badge {
-    background: rgba(255, 255, 255, 0.1);
-    color: #e5e7eb;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-}
-
-/* Light Mode Component Overrides */
-body.light-mode .sticky-card {
-    background: rgba(255, 255, 255, 0.7);
-    border: 1px solid rgba(0, 0, 0, 0.08);
-    box-shadow: var(--shadow-xl),
-        0 0 0 1px rgba(0, 0, 0, 0.02) inset;
-}
-
-body.light-mode .sticky-card::before {
-    background: linear-gradient(90deg,
-            transparent,
-            rgba(67, 206, 162, 0.4),
-            transparent);
-}
-
-body.light-mode .sticky-card:hover {
-    border-color: rgba(67, 206, 162, 0.3);
-    box-shadow: var(--shadow-xl),
-        0 0 40px rgba(67, 206, 162, 0.15),
-        0 0 0 1px rgba(67, 206, 162, 0.08) inset;
-}
-
-body.light-mode .card-number {
-    color: rgba(0, 0, 0, 0.04);
-}
-
-body.light-mode .pill {
-    background: rgba(0, 0, 0, 0.03);
-    border: 1px solid rgba(0, 0, 0, 0.1);
-}
-
-body.light-mode .pill:hover {
-    background: var(--accent-glow);
-    border-color: var(--accent-single);
-}
-
-body.light-mode .section-header {
-    border-top-color: rgba(0, 0, 0, 0.08);
-}
-
-body.light-mode .btn-magnetic {
-    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
-    color: #ffffff;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-}
-
-body.light-mode .btn-magnetic::before {
-    background: rgba(67, 206, 162, 0.3);
-}
-
-body.light-mode .btn-magnetic.outline {
-    background: transparent;
-    border: 2px solid rgba(0, 0, 0, 0.15);
-    color: var(--text-main);
-}
-
-body.light-mode .btn-magnetic.outline:hover {
-    background: rgba(0, 0, 0, 0.04);
-    border-color: var(--accent-single);
-}
-
-body.light-mode .modal-content {
-    background: var(--light-bg-elevated);
-    border: 1px solid rgba(0, 0, 0, 0.1);
-}
-
-body.light-mode .modal-header {
-    border-bottom-color: rgba(0, 0, 0, 0.08);
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.02) 0%, transparent 100%);
-}
-
-body.light-mode .close-modal {
-    background: rgba(0, 0, 0, 0.04);
-    border-color: rgba(0, 0, 0, 0.1);
-}
-
-body.light-mode .close-modal:hover {
-    background: rgba(67, 206, 162, 0.15);
-}
-
-body.light-mode .iot-img-wrapper {
-    border-color: rgba(0, 0, 0, 0.08);
-    box-shadow: var(--shadow-lg);
-}
-
-body.light-mode .social-img {
-    border-color: rgba(67, 206, 162, 0.4);
-}
-
-body.light-mode .footer-links a {
-    opacity: 0.7;
-}
-
-body.light-mode .footer-links a:hover {
-    opacity: 1;
-}
-
-body.light-mode .marquee-section {
-    border-top: 1px solid rgba(0, 0, 0, 0.08);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
-    background: var(--bg-panel);
-}
-
-body.light-mode .highlight {
-    -webkit-text-stroke: 1px rgba(0, 0, 0, 0.25);
-}
-
-body.light-mode .noise-overlay {
-    opacity: 0.015;
-}
-
-body.light-mode .iot-block {
-    border-bottom-color: rgba(0, 0, 0, 0.08);
-}
-
-body.light-mode .intel-card {
-    border-left-color: rgba(0, 0, 0, 0.12);
-}
-
-body.light-mode .badge {
-    background: rgba(0, 0, 0, 0.06);
-    color: var(--text-main);
-}
-
-body.light-mode .hero-subtitle {
-    color: var(--text-muted);
-}
-
-body.light-mode .big-statement {
-    color: var(--text-main);
-}
-
-body.light-mode .section-lead {
-    color: var(--text-muted);
-}
-
-body.light-mode .sticky-card h3 {
-    color: var(--text-main);
-}
-
-body.light-mode .sticky-card p {
-    color: var(--text-muted);
-}
-
-body.light-mode .contact-sub {
-    color: var(--text-muted);
-}
-
-body.light-mode .modal-section p {
-    color: var(--text-muted);
-}
-
-body.light-mode .modal-subtitle {
-    color: var(--text-muted);
-}
-
-body.light-mode .marquee-content {
-    color: var(--text-dim);
-}
-
-/* --- Impact cards light mode fix --- */
-body.light-mode .impact-card {
-    background: #ffffff;
-    border-color: rgba(0, 0, 0, 0.08);
-    box-shadow: var(--shadow-md);
-}
-
-body.light-mode .impact-card h4 {
-    color: #1a1a1a;
-}
-
-body.light-mode .impact-card p {
-    color: var(--light-text-muted);
-}
-
-body.light-mode .impact-label {
-    color: #595959;
-}
-
-body.light-mode .impact-card .number-badge {
-    background: rgba(67, 206, 162, 0.1);
-    color: var(--accent-single);
-}
-
-body.light-mode .impact-card:hover {
-    border-color: var(--accent-single);
-    box-shadow: var(--shadow-lg), 0 0 20px rgba(67, 206, 162, 0.08);
-}
-
-/* --- Section IoT (dark-section) light mode: force dark bg for readability --- */
-body.light-mode .dark-section {
-    background: #111827;
-    color: #f3f4f6;
-}
-
-body.light-mode .dark-section .section-title,
-body.light-mode .dark-section .section-label,
-body.light-mode .dark-section .section-lead,
-body.light-mode .dark-section h3,
-body.light-mode .dark-section h4,
-body.light-mode .dark-section p {
-    color: inherit;
-}
-
-body.light-mode .dark-section .section-lead,
-body.light-mode .dark-section .iot-block p,
-body.light-mode .dark-section .sticky-card p {
-    color: #9ca3af;
-}
-
-body.light-mode .dark-section .section-header {
-    border-top-color: rgba(255, 255, 255, 0.1);
-}
-
-body.light-mode .dark-section .tech-stack-mini span {
-    background: rgba(255, 255, 255, 0.07);
-    color: #d1d5db;
-}
-
-/* --- Stats section light mode --- */
-body.light-mode .stats-section {
-    background: #f5f5f7;
-    border-color: rgba(0, 0, 0, 0.06);
-}
-
-/* --- Contact section light mode --- */
-body.light-mode .contact-section {
-    background: linear-gradient(135deg, #f0f4f8 0%, #e8ecf0 100%);
-}
-
-body.light-mode .big-contact-title {
-    color: var(--light-text-main);
-}
-
-body.light-mode .contact-info-card p {
-    color: var(--light-text-main);
-}
-
-/* --- Innovation section: always dark, explicit override --- */
-body.light-mode .innovation-section {
-    background: linear-gradient(160deg, #060610 0%, #0a0a14 40%, #080d18 100%);
-}
-
-body.light-mode .innovation-section .innov-desc,
-body.light-mode .innovation-section .innov-info-card p {
-    color: rgba(200, 200, 200, 0.75);
-}
-
-body.light-mode .innovation-section .innov-info-card {
-    background: rgba(255,255,255,0.04);
-    border-color: rgba(255,255,255,0.08);
-}
-
-body.light-mode .innovation-section .innov-info-card h4 {
-    color: #e8e8e8;
-}
-
-/* --- intel-desc fix (dark mode class .light-section = light bg in DARK mode) --- */
+/* --- intel-desc: dark bg in .light-section --- */
 .intel-desc {
     color: #4b5563;
 }
@@ -349,17 +47,6 @@ body.light-mode .innovation-section .innov-info-card h4 {
     color: var(--text-muted);
 }
 
-body.light-mode .iot-block p {
-    color: var(--text-muted);
-}
-
-body.light-mode .intel-desc {
-    color: var(--text-muted);
-}
-
-body.light-mode .scroll-indicator {
-    color: var(--text-muted);
-}
 
 /* Theme Toggle Button */
 .theme-toggle,
@@ -520,10 +207,6 @@ a {
     transition: opacity 0.5s ease;
 }
 
-body.light-mode #hero-canvas {
-    opacity: 0.15;
-    /* Subtle in light mode */
-}
 
 /* FX: Noise & Cursor */
 .noise-overlay {
@@ -551,9 +234,6 @@ body.light-mode #hero-canvas {
     mix-blend-mode: difference;
 }
 
-body.light-mode .custom-cursor {
-    border-color: rgba(0, 0, 0, 0.7);
-}
 
 .custom-cursor.hovered {
     transform: translate(-50%, -50%) scale(3);
@@ -561,9 +241,6 @@ body.light-mode .custom-cursor {
     border-color: transparent;
 }
 
-body.light-mode .custom-cursor.hovered {
-    background-color: black;
-}
 
 /* Typography Utilities */
 .highlight {
@@ -573,9 +250,6 @@ body.light-mode .custom-cursor.hovered {
     /* Outline effect for contrast */
 }
 
-body.light-mode .highlight {
-    -webkit-text-stroke: 1px rgba(0, 0, 0, 0.3);
-}
 
 /* Marquee */
 .marquee-section {
@@ -589,10 +263,6 @@ body.light-mode .highlight {
     z-index: 10;
 }
 
-body.light-mode .marquee-section {
-    border-top: 1px solid rgba(0, 0, 0, 0.05);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
-}
 
 .marquee-content {
     display: inline-block;
@@ -1725,9 +1395,6 @@ body.light-mode .marquee-section {
     border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
 
-body.light-mode .stats-section {
-    border-color: rgba(0, 0, 0, 0.06);
-}
 
 .stats-grid {
     display: flex;
@@ -1787,9 +1454,6 @@ body.light-mode .stats-section {
     background: rgba(255, 255, 255, 0.08);
 }
 
-body.light-mode .stat-divider {
-    background: rgba(0, 0, 0, 0.1);
-}
 
 @media (max-width: 768px) {
     .stats-grid {
@@ -1812,9 +1476,6 @@ body.light-mode .stat-divider {
     background: linear-gradient(135deg, #0a0a0a 0%, #111111 100%);
 }
 
-body.light-mode .contact-section {
-    background: linear-gradient(135deg, #f0f4f8 0%, #e8ecf0 100%);
-}
 
 .contact-layout {
     display: grid;
@@ -1863,10 +1524,6 @@ body.light-mode .contact-section {
     cursor: pointer;
 }
 
-body.light-mode .contact-info-card {
-    background: rgba(0, 0, 0, 0.03);
-    border-color: rgba(0, 0, 0, 0.08);
-}
 
 .contact-info-card:hover {
     border-color: var(--accent-single);
@@ -1931,11 +1588,6 @@ body.light-mode .contact-info-card {
     backdrop-filter: blur(20px);
 }
 
-body.light-mode .contact-form-wrapper {
-    background: rgba(255, 255, 255, 0.8);
-    border-color: rgba(0, 0, 0, 0.08);
-    box-shadow: var(--shadow-xl);
-}
 
 .form-header {
     margin-bottom: 36px;
@@ -1988,13 +1640,6 @@ body.light-mode .contact-form-wrapper {
     -webkit-appearance: none;
 }
 
-body.light-mode .form-group input,
-body.light-mode .form-group select,
-body.light-mode .form-group textarea {
-    background: rgba(0, 0, 0, 0.04);
-    border-color: rgba(0, 0, 0, 0.12);
-    color: var(--light-text-main);
-}
 
 .form-group input::placeholder,
 .form-group textarea::placeholder {
@@ -2491,9 +2136,6 @@ body.light-mode .form-group textarea {
     color: rgba(212, 175, 55, 0.08);
 }
 
-body.light-mode .expertise-card .ep-num {
-    color: rgba(0, 0, 0, 0.04);
-}
 
 @media (max-width: 900px) {
     .expertise-grid {
@@ -2873,52 +2515,10 @@ body.light-mode .expertise-card .ep-num {
 /* ============================================
    LIGHT MODE OVERRIDES FOR NEW SECTIONS
    ============================================ */
-body.light-mode .expertise-section {
-    background: #f4f6f9;
-}
 
-body.light-mode .expertise-card {
-    background: #ffffff;
-    border-color: rgba(0, 0, 0, 0.08);
-    box-shadow: 0 4px 24px rgba(0,0,0,0.07), 0 1px 4px rgba(0,0,0,0.04);
-}
-
-body.light-mode .expertise-card:hover {
-    box-shadow: 0 12px 40px rgba(0,0,0,0.12), 0 4px 12px rgba(0,0,0,0.06);
-}
-
-body.light-mode .expertise-card h3 {
-    color: #111827;
-}
-
-body.light-mode .expertise-card p {
-    color: #374151;
-}
-
-body.light-mode .expertise-card .ep-skills span {
-    background: #f3f4f6;
-    border-color: #e5e7eb;
-    color: #374151;
-}
-
-body.light-mode .expertise-card:hover .ep-skills span {
-    border-color: rgba(67, 206, 162, 0.4);
-    color: #1a1a1a;
-}
 
 /* Gender card stays dark in both modes */
-body.light-mode .expertise-card--gender h3 {
-    color: #f3f4f6;
-}
 
-body.light-mode .expertise-card--gender p {
-    color: rgba(220, 220, 220, 0.8);
-}
-
-body.light-mode .innov-info-card {
-    background: rgba(0,0,0,0.03);
-    border-color: rgba(0,0,0,0.08);
-}
 
 /* ============================================
    PHILOSOPHY SECTION — GOLD PILLS

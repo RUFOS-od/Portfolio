@@ -90,34 +90,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (heroTitle) heroTitle.classList.add('active');
     }, 100);
 
-    // --- 5. Theme Toggle Implementation ---
-    const themeToggle = document.getElementById('theme-toggle');
-    const themeIcon = themeToggle.querySelector('i');
-
-    // Check for saved theme preference or default to dark
-    const currentTheme = localStorage.getItem('theme') || 'dark';
-    if (currentTheme === 'light') {
-        document.body.classList.add('light-mode');
-        themeIcon.classList.remove('fa-sun');
-        themeIcon.classList.add('fa-moon');
-    }
-
-    themeToggle.addEventListener('click', () => {
-        document.body.classList.toggle('light-mode');
-
-        // Update icon
-        if (document.body.classList.contains('light-mode')) {
-            themeIcon.classList.remove('fa-sun');
-            themeIcon.classList.add('fa-moon');
-            localStorage.setItem('theme', 'light');
-        } else {
-            themeIcon.classList.remove('fa-moon');
-            themeIcon.classList.add('fa-sun');
-            localStorage.setItem('theme', 'dark');
-        }
-    });
-
-    // --- 5b. Mobile Menu Logic ---
+    // --- 5. Mobile Menu Logic ---
     const menuBtn = document.querySelector('.menu-btn');
     const mobileMenu = document.querySelector('.mobile-menu-overlay');
     const mobileLinks = document.querySelectorAll('.mobile-link');
