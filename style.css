@@ -250,24 +250,30 @@ body.light-mode .impact-card {
     box-shadow: var(--shadow-md);
 }
 
-body.light-mode .impact-card h4 {
+body.light-mode .impact-card h4,
+body.light-mode .dark-section .impact-card h4 {
     color: #1a1a1a;
 }
 
-body.light-mode .impact-card p {
-    color: var(--light-text-muted);
+body.light-mode .impact-card p,
+body.light-mode .dark-section .impact-card p {
+    color: #374151;
 }
 
-body.light-mode .impact-label {
-    color: #595959;
+body.light-mode .impact-label,
+body.light-mode .dark-section .impact-label {
+    color: var(--accent-single);
+    opacity: 0.85;
 }
 
-body.light-mode .impact-card .number-badge {
+body.light-mode .impact-card .number-badge,
+body.light-mode .dark-section .impact-card .number-badge {
     background: rgba(67, 206, 162, 0.1);
     color: var(--accent-single);
 }
 
-body.light-mode .impact-card:hover {
+body.light-mode .impact-card:hover,
+body.light-mode .dark-section .impact-card:hover {
     border-color: var(--accent-single);
     box-shadow: var(--shadow-lg), 0 0 20px rgba(67, 206, 162, 0.08);
 }
