@@ -6,8 +6,8 @@
     --bg-panel: #141414;
     --bg-elevated: #1a1a1a;
     --text-main: #e8e8e8;
-    --text-muted: #999999;
-    --text-dim: #666666;
+    --text-muted: #b0b0b0;
+    --text-dim: #808080;
     --accent-gradient: linear-gradient(135deg, #43cea2 0%, #185a9d 100%);
     --accent-single: #43cea2;
     --accent-glow: rgba(67, 206, 162, 0.15);
@@ -42,8 +42,8 @@
     --light-bg-panel: #f5f5f5;
     --light-bg-elevated: #ffffff;
     --light-text-main: #1a1a1a;
-    --light-text-muted: #404040;
-    --light-text-dim: #737373;
+    --light-text-muted: #374151;
+    --light-text-dim: #595959;
 }
 
 body.light-mode {
@@ -241,6 +241,112 @@ body.light-mode .modal-subtitle {
 
 body.light-mode .marquee-content {
     color: var(--text-dim);
+}
+
+/* --- Impact cards light mode fix --- */
+body.light-mode .impact-card {
+    background: #ffffff;
+    border-color: rgba(0, 0, 0, 0.08);
+    box-shadow: var(--shadow-md);
+}
+
+body.light-mode .impact-card h4 {
+    color: #1a1a1a;
+}
+
+body.light-mode .impact-card p {
+    color: var(--light-text-muted);
+}
+
+body.light-mode .impact-label {
+    color: #595959;
+}
+
+body.light-mode .impact-card .number-badge {
+    background: rgba(67, 206, 162, 0.1);
+    color: var(--accent-single);
+}
+
+body.light-mode .impact-card:hover {
+    border-color: var(--accent-single);
+    box-shadow: var(--shadow-lg), 0 0 20px rgba(67, 206, 162, 0.08);
+}
+
+/* --- Section IoT (dark-section) light mode: force dark bg for readability --- */
+body.light-mode .dark-section {
+    background: #111827;
+    color: #f3f4f6;
+}
+
+body.light-mode .dark-section .section-title,
+body.light-mode .dark-section .section-label,
+body.light-mode .dark-section .section-lead,
+body.light-mode .dark-section h3,
+body.light-mode .dark-section h4,
+body.light-mode .dark-section p {
+    color: inherit;
+}
+
+body.light-mode .dark-section .section-lead,
+body.light-mode .dark-section .iot-block p,
+body.light-mode .dark-section .sticky-card p {
+    color: #9ca3af;
+}
+
+body.light-mode .dark-section .section-header {
+    border-top-color: rgba(255, 255, 255, 0.1);
+}
+
+body.light-mode .dark-section .tech-stack-mini span {
+    background: rgba(255, 255, 255, 0.07);
+    color: #d1d5db;
+}
+
+/* --- Stats section light mode --- */
+body.light-mode .stats-section {
+    background: #f5f5f7;
+    border-color: rgba(0, 0, 0, 0.06);
+}
+
+/* --- Contact section light mode --- */
+body.light-mode .contact-section {
+    background: linear-gradient(135deg, #f0f4f8 0%, #e8ecf0 100%);
+}
+
+body.light-mode .big-contact-title {
+    color: var(--light-text-main);
+}
+
+body.light-mode .contact-info-card p {
+    color: var(--light-text-main);
+}
+
+/* --- Innovation section: always dark, explicit override --- */
+body.light-mode .innovation-section {
+    background: linear-gradient(160deg, #060610 0%, #0a0a14 40%, #080d18 100%);
+}
+
+body.light-mode .innovation-section .innov-desc,
+body.light-mode .innovation-section .innov-info-card p {
+    color: rgba(200, 200, 200, 0.75);
+}
+
+body.light-mode .innovation-section .innov-info-card {
+    background: rgba(255,255,255,0.04);
+    border-color: rgba(255,255,255,0.08);
+}
+
+body.light-mode .innovation-section .innov-info-card h4 {
+    color: #e8e8e8;
+}
+
+/* --- intel-desc fix (dark mode class .light-section = light bg in DARK mode) --- */
+.intel-desc {
+    color: #4b5563;
+}
+
+.dark-section .intel-desc {
+    color: var(--text-muted);
 }
 
 body.light-mode .iot-block p {
@@ -2177,7 +2283,7 @@ body.light-mode .form-group textarea {
 
 .expertise-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 28px;
     margin-top: 20px;
 }
@@ -2236,6 +2342,12 @@ body.light-mode .form-group textarea {
     background: rgba(67, 206, 162, 0.1);
     color: #43cea2;
     border: 1px solid rgba(67, 206, 162, 0.2);
+}
+
+.ep-icon--market {
+    background: rgba(168, 85, 247, 0.1);
+    color: #c084fc;
+    border: 1px solid rgba(168, 85, 247, 0.25);
 }
 
 .ep-icon--iot {
@@ -2363,10 +2475,30 @@ body.light-mode .form-group textarea {
     font-weight: 700;
 }
 
-@media (max-width: 1024px) {
+.ep-num {
+    position: absolute;
+    top: 22px;
+    right: 26px;
+    font-family: var(--font-heading);
+    font-size: 3rem;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.04);
+    line-height: 1;
+    pointer-events: none;
+}
+
+.ep-num--gold {
+    color: rgba(212, 175, 55, 0.08);
+}
+
+body.light-mode .expertise-card .ep-num {
+    color: rgba(0, 0, 0, 0.04);
+}
+
+@media (max-width: 900px) {
     .expertise-grid {
         grid-template-columns: 1fr;
-        max-width: 600px;
+        max-width: 560px;
         margin-left: auto;
         margin-right: auto;
     }
@@ -2741,37 +2873,46 @@ body.light-mode .form-group textarea {
 /* ============================================
    LIGHT MODE OVERRIDES FOR NEW SECTIONS
    ============================================ */
+body.light-mode .expertise-section {
+    background: #f4f6f9;
+}
+
 body.light-mode .expertise-card {
     background: #ffffff;
-    border-color: rgba(0,0,0,0.07);
-    box-shadow: var(--shadow-md);
+    border-color: rgba(0, 0, 0, 0.08);
+    box-shadow: 0 4px 24px rgba(0,0,0,0.07), 0 1px 4px rgba(0,0,0,0.04);
+}
+
+body.light-mode .expertise-card:hover {
+    box-shadow: 0 12px 40px rgba(0,0,0,0.12), 0 4px 12px rgba(0,0,0,0.06);
 }
 
 body.light-mode .expertise-card h3 {
-    color: #1a1a1a;
+    color: #111827;
 }
 
 body.light-mode .expertise-card p {
-    color: #555;
+    color: #374151;
 }
 
 body.light-mode .expertise-card .ep-skills span {
-    background: rgba(0,0,0,0.04);
-    border-color: rgba(0,0,0,0.1);
-    color: #444;
+    background: #f3f4f6;
+    border-color: #e5e7eb;
+    color: #374151;
 }
 
-body.light-mode .expertise-card--gender {
-    background: linear-gradient(145deg, #1a1a2e 0%, #16213e 100%);
+body.light-mode .expertise-card:hover .ep-skills span {
+    border-color: rgba(67, 206, 162, 0.4);
+    color: #1a1a1a;
 }
 
-body.light-mode .expertise-card--gender h3,
+/* Gender card stays dark in both modes */
+body.light-mode .expertise-card--gender h3 {
+    color: #f3f4f6;
+}
+
 body.light-mode .expertise-card--gender p {
-    color: #e8e8e8;
-}
-
-body.light-mode .expertise-section {
-    background: #f5f5f7;
+    color: rgba(220, 220, 220, 0.8);
 }
 
 body.light-mode .innov-info-card {
